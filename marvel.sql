@@ -95,3 +95,15 @@ DELETE FROM people
 WHERE id
 BETWEEN 10 AND 14;
 SELECT * FROM people;
+
+-- DELETE FROM movies
+-- WHERE id IN (SELECT 2015 FROM year);
+-- SELECT * FROM movies;
+
+DELETE FROM movies
+WHERE year = 2015;
+SELECT * FROM movies;
+
+DELETE FROM movies
+WHERE id IN (4, 8, 18);
+SELECT * FROM movies;
